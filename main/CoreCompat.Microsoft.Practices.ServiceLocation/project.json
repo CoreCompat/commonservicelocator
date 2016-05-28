@@ -19,7 +19,15 @@
 
   "buildOptions": {
     "keyFile": "Microsoft.Practices.ServiceLocation.snk",
-    "strongName": true
+    "strongName": true,
+    "compile": {
+      "include": [
+        "../Microsoft.Practices.ServiceLocation/**/*.cs"
+      ],
+      "exclude": [
+        "../Microsoft.Practices.ServiceLocation/obj/"
+      ]
+    }
   },
 
   "frameworks": {
